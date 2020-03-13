@@ -1,0 +1,32 @@
+$primary-color:#fff;
+$secondary-color:#ff652f;
+$background-color:#222020;
+*
+{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    image-orientation: 0deg;
+}
+
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color)
+{
+    @if(lightness($color) >40%)
+    {
+        @return #fff;
+    }@else
+    {
+        @return #000000;
+    }
+}

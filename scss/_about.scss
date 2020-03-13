@@ -1,0 +1,23 @@
+.about {
+  background-color: $background-color;
+  width: 100%;
+  height: 100%;
+
+  &_starting {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $background-color;
+    
+    &_text {
+        font-size: 1rem;
+        font-family: monospace;
+    }
+  }
+
+  &_mid {
+    background: #125555;
+    height: 100%;
+  }
+}
