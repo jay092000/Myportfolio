@@ -1,23 +1,90 @@
 .about {
-  background-color: $background-color;
-  width: 100%;
   height: 100%;
+  width: 100%;
 
-  &_starting {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $background-color;
-    
-    &_text {
-        font-size: 1rem;
-        font-family: monospace;
+  background: #fff !important;
+  color: black;
+  padding: 70px 0px 0px 0px;
+  text-align: center !important;
+  align-content: center;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  h2 {
+    position: relative;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 30px;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: black;
+  }
+  h5 {
+    margin-top: 15px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #bbbbbb;
+  }
+  hr {
+    margin: 30px auto;
+  }
+
+  &_text {
+    margin: 0px auto;
+    line-height: 30px;
+    max-width: 520px;
+    font-size: 16px;
+    padding: 0px 0px 0px 0px;
+
+    &_p2
+    {
+      margin-top: 5%;
     }
   }
 
-  &_mid {
-    background: #125555;
-    height: 100%;
+  &_skills
+  {
+    height: 30%;
+    margin: auto 0;
+    margin-top: 3%;
+    margin-bottom: 10px;
+    
+    &_chart
+    {
+     
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(100, 1fr);
+      grid-column-gap: 20px;
+      margin: 0 auto;
+
+      width: 35%;
+      padding: 5px 10px;
+    }
   }
 }
+
+
+[class*="bar"] {
+  border-radius: 5px 5px 0 0;
+  transition: all .6s ease;
+  background-color: #ff4136;
+  grid-row-start: 1;
+  grid-row-end: 101;
+}
+
+$totalRows: 101;
+
+@mixin chartValue($data) {
+  $result: $totalRows - $data;
+  grid-row-start: $result;
+}
+
+@for $i from 1 through $totalRows {
+  .bar-#{$i} {
+    @include chartValue($i);
+  }
+}
+
