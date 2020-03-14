@@ -1,8 +1,8 @@
 $(function() {
   var body = $("#home");
   var backgrounds = [
-    "url(../img/IMG_1.JPG) center top",
-    "url(../img/IMG_2.JPG) center top"
+    "url(./img/IMG_1.JPG) center top",
+    "url(./img/IMG_2.JPG) center top"
   ];
   var current = 0;
   function fade(){body.fadeOut('slow',nextBackground);}
