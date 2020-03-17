@@ -1,10 +1,13 @@
+var flag = '0';
 $(window).scroll(function () {
   var hT = $('.about_text_p2 ').offset().top,
     hH = $('.about_text_p2').outerHeight(),
     wH = $(window).height(),
     wS = $(this).scrollTop();
-
-  if (wS > (hT + hH - wH)) {
+    
+  if (wS > (hT + hH - wH) && flag=='0') {
+    
+    flag = '1';
     setTimeout(function start() {
 
       $('.bar').each(function (i) {
