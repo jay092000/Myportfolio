@@ -1,0 +1,71 @@
+$green: #1ECD97;
+$gray: #bbbbbb;
+
+
+button {
+
+  
+  outline:none;
+  height: 40px;
+  text-align: center;
+  width: 200px;
+  border-radius:40px;
+  background: #fff;
+  border: 2px solid $green;
+  color:$green;
+  letter-spacing:1px;
+  text-shadow:0;
+  
+  cursor: pointer;
+  transition: all 1s ease;
+  &:hover {
+    color:white;
+    background: $green;
+  }
+  &:active {
+    //letter-spacing: 2px;
+    letter-spacing: 2px ;
+  }
+  &:after {
+    content:"Dowload My resume.";
+  }
+}
+.onclic {
+  width: 40px;
+  border-color:$gray;
+  border-width:3px;
+  font-size:0;
+  border-left-color:$green;
+  animation: rotating 2s 0.25s linear infinite;
+
+  &:after {
+    content:"thanks.";
+  }
+  &:hover {
+    color:$green;
+    background: white;
+  }
+}
+.validate {
+  font-size:13px;
+  color: white;
+  background: $green;
+  &:after {
+   
+    content:"Thanks.!";
+  }
+}
+
+button::selection
+{
+ border: none;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(415deg);
+  }
+}
