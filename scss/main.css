@@ -18,7 +18,7 @@ img {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
-  background: url("../img/IMG_1.JPG") center top;
+  background: url("../img/IMG_2.JPG") center top;
   background-size: cover;
 }
 
@@ -215,7 +215,6 @@ img {
 }
 
 .about {
-  height: 110%;
   width: 100%;
   background: #fff !important;
   color: black;
@@ -274,6 +273,10 @@ img {
 .about_wrap h1 {
   text-align: center;
   margin: 20px auto;
+}
+
+.about_download {
+  margin-bottom: 5vh;
 }
 
 .bar {
@@ -801,6 +804,79 @@ button::selection {
 .work {
   height: 100%;
   width: 100%;
+}
+
+.testimonials {
+  padding: 10vh 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials h2 {
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.testimonials h5 {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.testimonials hr {
+  width: 30px;
+  margin: 30px auto;
+}
+
+.testimonials_container {
+  width: 50vh;
+}
+
+.testimonials_slide {
+  height: 50vh !important;
+}
+
+.testimonials_slide img {
+  margin-top: 10px;
+  background-color: #ffffff;
+  width: 25vh;
+  border-radius: 50%;
+}
+
+.testimonials_slide text h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.testimonials_slide text h6 {
+  font-size: 12px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  color: #666;
+}
+
+.testimonials_slide text p {
+  color: #444444;
+  padding: 0 10px;
+  line-height: 20px;
+  font-size: 12px;
 }
 
 body {

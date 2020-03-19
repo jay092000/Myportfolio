@@ -7,6 +7,8 @@
   <script src="js/download.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Electrolize&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./scss/main.css" />
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
@@ -73,21 +75,75 @@
           <div class="bar" data-percent="75%"><span class="label second">Python</span></div>
         </div>
       </div>
-      <div class="download">
+      <div class="download about_download">
         <div class="container">
           <button id="button" onclick="myFunction()"></button>
         </div>
       </div>
     </section>
-    <section id="#work" class="work"></section>
+  
+    <section class="testimonials">
+      <h2>Testimonials</h2>
+      <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, laboriosam!</h5>
+      <hr>
+      <div class="swiper-container testimonials_container" >
+       
+        <div class="swiper-wrapper">
+         
+          <div class="swiper-slide testimonials_slide">
+            <img src="#"/>
+            <text>
+                <h3>Name of person</h3>
+                <h6>Position of person</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, totam deserunt iste ipsum repudiandae quae voluptatum porro autem quos dolore, quisquam ab beatae, nostrum ducimus.</p>
+            </text>
+          </div>
+          <div class="swiper-slide testimonials_slide">
+            <img src="#"/>
+            <text>
+                <h3>Name of person</h3>
+                <h6>Position of person</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, totam deserunt iste ipsum repudiandae quae voluptatum porro autem quos dolore, quisquam ab beatae, nostrum ducimus.</p>
+            </text>
+          </div>
+          <div class="swiper-slide testimonials_slide">
+            <img src="#"/>
+            <text>
+                <h3>Name of person</h3>
+                <h6>Position of person</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, totam deserunt iste ipsum repudiandae quae voluptatum porro autem quos dolore, quisquam ab beatae, nostrum ducimus.</p>
+            </text>
+          </div>
+        
+        </div>
+        <div class="swiper-pagination testimonials_dots"></div>
+
+      
+      
+
+     
+      </div>
+    </section>
   </main>
   <script src="https://kit.fontawesome.com/5c81ef2a4f.js" crossorigin="anonymous"></script>
   <script type="module" src="js/main.js"></script>
   <script src="js/typewriter.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src="js/skills.js"></script>
  
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/skills.js"></script>
+
+
+  <script>
+   var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+      },
+    }); 
+  </script>
+
 </body>
 
 </html>

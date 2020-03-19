@@ -1,6 +1,6 @@
 
 function myFunction() {
-
+	
 	document.getElementById("button").classList.add("onclic");
 	setTimeout(stopLoding, 4000)
 }

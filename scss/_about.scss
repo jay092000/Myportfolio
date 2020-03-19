@@ -1,5 +1,5 @@
 .about {
-  height: 110%;
+  
   width: 100%;
 
   background: #fff !important;
@@ -60,6 +60,10 @@
     }
   }
 
+  &_download
+  {
+    margin-bottom: 5vh;
+  }
 
 }
 
