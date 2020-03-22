@@ -279,6 +279,10 @@ img {
   margin-bottom: 5vh;
 }
 
+.about_download button {
+  min-width: 260px;
+}
+
 .bar {
   background: #ff413d;
   width: 0;
@@ -806,10 +810,13 @@ button::selection {
   width: 100%;
 }
 
-.testimonials {
-  padding: 10vh 0;
+.testimonial {
   height: 100%;
   width: 100%;
+  padding: 10vh 0px;
+}
+
+.testimonials {
   background-color: #f5f5f5;
   text-align: center;
   -webkit-box-pack: center;
@@ -852,7 +859,7 @@ button::selection {
 .testimonials_slide img {
   margin-top: 10px;
   background-color: #ffffff;
-  width: 25vh;
+  width: 15vh;
   border-radius: 50%;
 }
 
