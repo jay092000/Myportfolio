@@ -276,7 +276,7 @@ img {
 }
 
 .about_download {
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
 }
 
 .bar {
@@ -713,7 +713,7 @@ ul {
   }
 }
 
-button {
+.button {
   outline: none;
   height: 40px;
   text-align: center;
@@ -729,16 +729,16 @@ button {
   transition: all 1s ease;
 }
 
-button:hover {
+.button:hover {
   color: white;
   background: #1ECD97;
 }
 
-button:active {
+.button:active {
   letter-spacing: 2px;
 }
 
-button:after {
+.button:after {
   content: "Dowload My resume.";
 }
 
@@ -807,8 +807,8 @@ button::selection {
 }
 
 .testimonial {
-  min-height: 80%;
   width: 100%;
+  margin-bottom: 10vh;
 }
 
 .testimonials {
@@ -853,8 +853,7 @@ button::selection {
 }
 
 .testimonials_slide {
-  height: 45vh !important;
-  max-height: 500px;
+  width: 60vw;
 }
 
 .testimonials_slide img {
@@ -883,9 +882,133 @@ button::selection {
 
 .testimonials_slide text p {
   color: #444444;
-  padding: 0 10px;
+  padding: 0 10vw;
   line-height: 20px;
+  font-size: 14px;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+  position: relative !important;
+  margin: 20px 0px 0px 0px !important;
+}
+
+.contact {
+  text-align: center;
+  display: block;
+}
+
+.contact h2 {
+  color: #000000;
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contact h5 {
+  color: #666;
   font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contact hr {
+  width: 30px;
+  margin: 30px auto;
+  height: 1px !important;
+  color: #777;
+  background-color: #777;
+}
+
+.contact_box {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: left;
+  padding: 5vh 0;
+}
+
+.contact_box_message {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contact_box_message form {
+  margin: 0 10%;
+}
+
+.contact_box_message form input {
+  border: 1px solid;
+  border-radius: 0px;
+  padding: 10px;
+  padding-left: 15px;
+  font-size: 12px;
+  width: 100%;
+  margin: 1% 0;
+}
+
+.contact_box_message form textarea {
+  width: 100%;
+  max-height: 150px;
+  resize: vertical;
+  border: 1px solid;
+  border-radius: 0px;
+  padding: 10px;
+  padding-left: 15px;
+  font-size: 12px;
+  margin: 1% 0;
+}
+
+.contact_box_message form button {
+  margin: 10px 0;
+  border: 1px solid;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.contact_box_data {
+  color: #777;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contact_box_data_card {
+  margin: 5% 10%;
+}
+
+.contact_box_data_card span {
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.contact_box_data_card p {
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .contact_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .footer {

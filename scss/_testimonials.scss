@@ -1,8 +1,8 @@
 .testimonial
 {
-    min-height: 80%;
+
     width: 100%;
-   
+     margin-bottom: 10vh;
 }
 .testimonials {
    
@@ -46,9 +46,8 @@
     }
 
     &_slide {
-        height: 45vh !important;
-        max-height: 500px;
-        // min-height: max-content;
+       
+       width: 60vw;
         img {
             margin-top: 10px;
             background-color: #ffffff;
@@ -78,9 +77,9 @@
             p
             {
                 color: #444444;
-                padding: 0 10px;
+                padding: 0 10vw;
                 line-height: 20px;
-                font-size: 12px;
+                font-size: 14px;
             }
         }
     }
@@ -89,5 +88,12 @@
     {
 
     }
+
+}
+.swiper-pagination
+{
+    bottom: 0 !important;
+    position: relative !important;
+    margin: 20px 0px 0px 0px !important;
 
 }

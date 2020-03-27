@@ -1,0 +1,118 @@
+.contact {
+    text-align: center;
+    display: block;
+  h2 {
+    color: #000000;
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  h5
+  {
+      color: #666;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  hr 
+  {
+    width: 30px;
+    margin: 30px auto;
+    height: 1px !important;
+    color: #777;
+    background-color: #777;
+  }
+  &_box {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding: 5vh 0;
+    &_message {
+      flex: 1;
+    
+        form 
+        {
+          margin: 0 10%;
+          input 
+          {
+            border: 1px solid;
+            border-radius: 0px;
+            padding: 10px;
+            padding-left: 15px;
+            font-size: 12px;
+            width: 100%;
+            margin: 1% 0;
+
+           
+          }
+          input:focus
+          {
+            
+          } 
+
+          textarea
+          {
+            width: 100%;
+            max-height: 150px;
+            resize: vertical;
+            border: 1px solid;
+            border-radius: 0px;
+            padding: 10px;
+            padding-left: 15px;
+            font-size: 12px;
+            margin: 1% 0;
+          }
+
+          button 
+          {
+            margin: 10px 0;
+            border: 1px solid;
+            padding: 10px;
+            font-size: 14px;
+           
+          }
+        }
+    }
+    &_data {
+      color: #777;
+      flex: 1;
+      
+      &_card
+      {
+        margin: 5% 10%;
+        
+
+        span
+        {
+          font-size: 14px;
+          margin-left: 10px;
+          font-weight: 700;
+          line-height: 32px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+
+        p 
+        {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 700px) {
+  .contact
+  {
+    &_box
+    {
+      flex-direction: column;
+    }
+  }
+}
