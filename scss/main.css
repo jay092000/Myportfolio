@@ -936,7 +936,7 @@ button::selection {
       -ms-flex-direction: row;
           flex-direction: row;
   text-align: left;
-  padding: 5vh 0;
+  padding: 0 0 10vh 0;
 }
 
 .contact_box_message {
@@ -962,6 +962,7 @@ button::selection {
 .contact_box_message form textarea {
   width: 100%;
   max-height: 150px;
+  min-height: 50px;
   resize: vertical;
   border: 1px solid;
   border-radius: 0px;
