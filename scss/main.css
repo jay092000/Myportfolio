@@ -11,6 +11,16 @@ img {
   image-orientation: 0deg;
 }
 
+@font-face {
+  font-family: lobsters;
+  src: url("../fonts/LobsterTwo.woff") format("woff"), url("../fonts/LobsterTwo.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: playfair;
+  src: url("../fonts/PlayfairDisplaySC-Regular.ttf");
+}
+
 .home {
   height: 100%;
   padding-top: 40vh;
@@ -22,21 +32,29 @@ img {
   background-size: cover;
 }
 
+.home h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+}
+
 .home_name {
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-top: 1rem;
+  font-weight: 900;
   border-bottom: 2px solid #fff;
+  font-family: playfair;
 }
 
 .home_name--last {
   color: #ff652f;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .home_typewwrite {
+  font-family: lobsters !important;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 22px;
 }
 
 @media (min-width: 1100px) {
@@ -57,6 +75,16 @@ img {
   max-width: 100%;
   max-height: 100%;
   image-orientation: 0deg;
+}
+
+@font-face {
+  font-family: lobsters;
+  src: url("../fonts/LobsterTwo.woff") format("woff"), url("../fonts/LobsterTwo.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: playfair;
+  src: url("../fonts/PlayfairDisplaySC-Regular.ttf");
 }
 
 .menu-btn {

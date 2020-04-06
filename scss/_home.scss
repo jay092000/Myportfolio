@@ -7,24 +7,30 @@
   background: url("../img/IMG_2.JPG") center top;
   background-size: cover;
 
+  h2
+  {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+  }
   &_name {
     font-size: 5rem;
     padding-bottom: 1rem;
     margin-top: 1rem;
+    font-weight: 900;
     border-bottom: 2px solid #fff;
+    font-family: playfair;
     &--last {
       color: $secondary-color;
-      font-weight: 700;
+      font-weight: 400;
     }
   }
 
   &_typewwrite {
-    
+    font-family: lobsters !important;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 22px;
   }
 }
-
 
 @media (min-width: 1100px) {
   .home {
