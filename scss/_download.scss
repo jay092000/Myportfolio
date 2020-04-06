@@ -9,8 +9,8 @@ $gray: #bbbbbb;
   width: 290px;
   border-radius:40px;
   background: #fff;
-  border: 2px solid $green;
-  color:$green;
+  border: 2px solid $secondary-color;
+  color:$secondary-color;
   letter-spacing:1px;
   text-shadow:0;
   
@@ -18,7 +18,7 @@ $gray: #bbbbbb;
   transition: all 1s ease;
   &:hover {
     color:white;
-    background: $green;
+    background:$secondary-color;
   }
   &:active {
     //letter-spacing: 2px;
@@ -33,23 +33,22 @@ $gray: #bbbbbb;
   border-color:$gray;
   border-width:3px;
   font-size:0;
-  border-left-color:$green;
+  border-left-color:$secondary-color;
   animation: rotating 2s 0.25s linear infinite;
 
   &:after {
     content:"thanks.";
   }
   &:hover {
-    color:$green;
+    color:$secondary-color;
     background: white;
   }
 }
 .validate {
   font-size:13px;
   color: white;
-  background: $green;
+  background: $light-secondary-color;
   &:after {
-   
     content:"Thanks.!";
   }
 }

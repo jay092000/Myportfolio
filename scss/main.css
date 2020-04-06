@@ -262,6 +262,7 @@ img {
   line-height: 30px;
   padding-bottom: 15px;
   letter-spacing: 1px;
+  font-family: lobsters;
   text-transform: uppercase;
   color: black;
 }
@@ -308,7 +309,7 @@ img {
 }
 
 .bar {
-  background: #ff413d;
+  background: #f67c50;
   width: 0;
   margin: .25em 0;
   color: #fff;
@@ -320,7 +321,7 @@ img {
 }
 
 .bar:nth-of-type(odd) {
-  background: #ff6461;
+  background: #ff652f;
 }
 
 .bar .label {
@@ -748,8 +749,8 @@ ul {
   width: 290px;
   border-radius: 40px;
   background: #fff;
-  border: 2px solid #1ECD97;
-  color: #1ECD97;
+  border: 2px solid #ff652f;
+  color: #ff652f;
   letter-spacing: 1px;
   text-shadow: 0;
   cursor: pointer;
@@ -759,7 +760,7 @@ ul {
 
 .button:hover {
   color: white;
-  background: #1ECD97;
+  background: #ff652f;
 }
 
 .button:active {
@@ -775,7 +776,7 @@ ul {
   border-color: #bbbbbb;
   border-width: 3px;
   font-size: 0;
-  border-left-color: #1ECD97;
+  border-left-color: #ff652f;
   -webkit-animation: rotating 2s 0.25s linear infinite;
           animation: rotating 2s 0.25s linear infinite;
 }
@@ -785,14 +786,14 @@ ul {
 }
 
 .onclic:hover {
-  color: #1ECD97;
+  color: #ff652f;
   background: white;
 }
 
 .validate {
   font-size: 13px;
   color: white;
-  background: #1ECD97;
+  background: #f67c50;
 }
 
 .validate:after {

@@ -17,6 +17,7 @@
     line-height: 30px;
     padding-bottom: 15px;
     letter-spacing: 1px;
+    font-family: lobsters;
     text-transform: uppercase;
     color: black;
   }
@@ -70,7 +71,7 @@
 }
 
 .bar {
-  background: #ff413d;
+  background: $light-secondary-color;
   width: 0;
   margin: .25em 0;
   color: #fff;
@@ -81,7 +82,7 @@
 }
 
 .bar:nth-of-type(odd) {
-  background: #ff6461;
+  background: $secondary-color;
 }
 
 .bar .label {
