@@ -15,7 +15,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      
       @include transition-ease;
       &_left {
         flex: 1;
