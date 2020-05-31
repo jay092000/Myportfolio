@@ -81,7 +81,7 @@ img {
 
 .home_contant_part1_left_contant h2 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 5vw;
+  font-size: 4vh;
   color: #fff;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
@@ -89,7 +89,7 @@ img {
 }
 
 .home_contant_part1_left_contant_name {
-  font-size: 4vw;
+  font-size: 5vh;
   padding-bottom: 1rem;
   margin-top: 1rem;
   font-weight: 900;
@@ -101,13 +101,12 @@ img {
 
 .home_contant_part1_left_contant_name--last {
   color: #000;
-  font-weight: 400;
 }
 
 .home_contant_part1_left_contant_typewwrite {
   font-family: lobsters !important;
   font-weight: 700;
-  font-size: 20vw;
+  font-size: 3vh;
 }
 
 .home_contant_part1_right {
