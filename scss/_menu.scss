@@ -1,13 +1,32 @@
 @import  'config';
 
+.name 
+{position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 2px;
+  background: #ffffff;
+  
+  b {
+    float: left;
+    display: block;
+    font-size: 3vh;
+    color:$secondary-color;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+}
 .menu-btn
 {
-    position: absolute;
-    z-index: 1;
+    
+    position: fixed;
+    z-index: 21;
     right: 1rem;
     top: 1rem;
     height: 20px;
-    width: 280px;
+    width: 50px;
     cursor: pointer;
     @include transition-ease;
 
@@ -18,7 +37,7 @@
         top: 0.5rem;
         width: 28px;
         height: 3px;
-        background: #ffffff;
+        background: $secondary-color;
         @include transition-ease;
     
         
@@ -28,7 +47,7 @@
             top: -8px;
             width: 28px;
             height: 3px;
-            background:#fff;
+            background: $secondary-color;
             @include transition-ease;
         }
 
@@ -38,7 +57,7 @@
             top: 8px;
             width: 20px;
             height: 4px;
-            background:#fff;
+            background: $secondary-color;
             @include transition-ease;
         }
 
