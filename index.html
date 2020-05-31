@@ -19,6 +19,9 @@
 
   <body>
     <header>
+      <div class="name">
+        <b>JP.</b>
+      </div>
       <div class="menu-btn">
         <span class="menu-btn_burger"></span>
       </div>
@@ -42,20 +45,34 @@
     </header>
     <main>
       <section class="home" id="home">
-        <h2>Hey, I am</h2>
-        <h1 class="home_name">
-          Jay <span class="home_name--last">Patel</span>
-        </h1>
-        <h2 class="home_typewwrite">
-          <a
-            href=""
-            class="typewrite"
-            data-period="600"
-            data-type='[ "I am Full-Stack Developer","I love coding","AI/ML Enthusiast","Check out my profile"]'
-          >
-            <span class="wrap"></span
-          ></a>
-        </h2>
+        <div class="home_contant">
+          <div class="home_contant_part1" id="part1">
+            <div class="home_contant_part1_left" >
+              <div class="home_contant_part1_left_contant">
+                <h2 id="part1_1">Hey, I am</h2>
+                <h1 class="home_contant_part1_left_contant_name" id="part1_2">
+                  Jay
+                  <span class="home_contant_part1_left_contant_name--last" id="part1_3"
+                    >Patel</span
+                  >
+                </h1>
+               
+                <h2 class="home_contant_part1_left_contant_typewwrite" id="part1_4">
+                  <a
+                    href=""
+                    class="typewrite"
+                    data-period="600"
+                    data-type='[ "I am Full-Stack Developer","I love coding","AI/ML Enthusiast","Check out my profile"]'
+                  >
+                    <span class="wrap"></span
+                  ></a>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="home_contant_part2" id="part2"></div>
+          <div class="home_contant_welcome" id="welcome"><b>Hello</b></div>
+        </div>
       </section>
       <section id="about" class="about">
         <h2>About Me</h2>
@@ -78,7 +95,7 @@
         </div>
         <div class="about_wrap">
           <div class="holder">
-            <div class="bar " data-percent="95%">
+            <div class="bar" data-percent="95%">
               <span class="label">Java</span>
             </div>
             <div class="bar" data-percent="80%">
@@ -98,7 +115,9 @@
           </div>
         </div>
       </section>
-
+      <section class="projects" id="projects">
+        <div class="projects_menu"></div>
+      </section>
       <section class="testimonial" id="testimonial">
         <div class="testimonials">
           <h2>Testimonials</h2>
@@ -106,7 +125,7 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
             laboriosam!
           </h5>
-          <hr/>
+          <hr />
           <div class="swiper-container testimonials_container">
             <div class="swiper-wrapper">
               <div class="swiper-slide testimonials_slide">
@@ -174,19 +193,19 @@
             <div class="contact_box_data_card">
               <i class="fas fa-map-marked"></i>
               <span>Address</span>
-              <br>
+              <br />
               <p>Ahmedabad,IND</p>
             </div>
             <div class="contact_box_data_card">
               <i class="fas fa-mobile-alt"></i>
               <span>Phone number</span>
-              <br>
+              <br />
               <p>(+91)9925203383</p>
             </div>
             <div class="contact_box_data_card">
               <i class="fas fa-envelope"></i>
               <span>Email</span>
-              <br>
+              <br />
               <p>Jay092000patel@gmail.com</p>
             </div>
           </div>
@@ -200,7 +219,7 @@
           <i class="fab fa-facebook"></i>
           <i class="fab fa-instagram"></i>
           <i class="fab fa-linkedin"></i>
-        </div>  
+        </div>
       </section>
     </main>
     <script
@@ -209,6 +228,7 @@
     ></script>
     <script type="module" src="js/main.js"></script>
     <script src="js/typewriter.js"></script>
+    <script src="js/img.sliding.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
@@ -223,8 +243,8 @@
       var swiper = new Swiper(".swiper-container", {
         pagination: {
           el: ".swiper-pagination",
-          dynamicBullets: true
-        }
+          dynamicBullets: true,
+        },
       });
     </script>
   </body>

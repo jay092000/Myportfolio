@@ -1,21 +1,33 @@
-$(function() {
-  var body = $("#home");
-  var backgrounds = [
-    "url(./img/IMG_1.JPG) center top",
-    "url(./img/IMG_2.JPG) center top"
-  ];
-  var current = 0;
-  function fade(){body.fadeOut('slow',nextBackground);}
-  function nextBackground() {
-    body.css(
-      "background",
-      backgrounds[(current = ++current % backgrounds.length)]
-    );
-    body.css("backgroundSize", "cover");
-    body.fadeIn(3000);
-    fade();
-  }
-  fade();
-  body.css("background", backgrounds[0]);
-  body.css("backgroundSize", "cover");
-});
+setTimeout(function () {
+        let part1 = document.getElementById("part1");
+        let part2 = document.getElementById("part2");
+        let welcome = document.getElementById("welcome");
+        let part1_1 = document.getElementById("part1_1");
+        let part1_2 = document.getElementById("part1_2");
+        let part1_3 = document.getElementById("part1_3");
+        let part1_4 = document.getElementById("part1_4");
+        
+        welcome.style.transform = "translatex(300%)";
+        for (var i = 51; i < 101; i=i+1) {
+            setTimeout(function(){width_inc(i)},50);
+        }
+       
+        function width_inc(wid)
+        {
+            part1.style.width = wid + '%';
+        }
+        part2.style.width = 0;
+        window.setTimeout(function(){
+            welcome.style.display = 'none'; 
+        },500);
+        window.setTimeout(function(){
+           part1_1.style.opacity = 1;
+        },500);
+        window.setTimeout(function(){
+            part1_2.style.opacity = 1;
+            part1_3.style.opacity = 1;
+         },1000);
+         window.setTimeout(function(){
+            part1_4.style.opacity = 1;
+         },1500);
+  }, 1500);
