@@ -38,13 +38,13 @@
            
             font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
               "Lucida Sans", Arial, sans-serif;
-            font-size: 5vw;
+            font-size: 4vh;
             color: #fff;
             opacity: 0;
             @include transition-ease;
           }
           &_name {
-            font-size: 4vw;
+            font-size: 5vh;
             padding-bottom: 1rem;
             margin-top: 1rem;
             font-weight: 900;
@@ -53,14 +53,14 @@
             @include transition-ease;
             &--last {
               color: #000;
-              font-weight: 400;
+              
             }
           }
          
           &_typewwrite {
             font-family: lobsters !important;
             font-weight: 700;
-            font-size: 20vw;
+            font-size: 3vh;
           }
         }
       }
