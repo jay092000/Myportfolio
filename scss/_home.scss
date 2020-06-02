@@ -28,13 +28,13 @@
           position: absolute;
           
           top: 50%;
-          left:30%;
+          left:20%;
           transform: translatex(-30%);
           transform: translateY(-40%);
           color: #000;
           @include transition-ease;
           h2 {
-           
+            
             font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
               "Lucida Sans", Arial, sans-serif;
             font-size: 4vh;
@@ -79,9 +79,10 @@
       width: fit-content;
       color: black;
       font-size: 13vw;
+      font-family: lobsters !important;
       position: absolute;
-      transform: translatex(100%);
-      margin-left: 0;
+      transform: translatex(-50%);
+      margin-left: 50%;
       top: 50%;
       margin-top: -50px;
       @include transition-ease;

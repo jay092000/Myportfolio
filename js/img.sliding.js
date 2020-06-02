@@ -19,7 +19,7 @@ setTimeout(function () {
         part2.style.width = 0;
         window.setTimeout(function(){
             welcome.style.display = 'none'; 
-        },500);
+        },350);
         window.setTimeout(function(){
            part1_1.style.opacity = 1;
         },500);

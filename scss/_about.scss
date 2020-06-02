@@ -64,7 +64,7 @@
   &_download
   {
     margin-bottom: 10vh;
-
+    
    
   }
 
@@ -79,6 +79,7 @@
   transition: width 2s, background .2s;
   -webkit-transform: translate3d(0, 0, 0);
   clear: both;
+  
 }
 
 .bar:nth-of-type(odd) {
@@ -95,6 +96,7 @@
   position: relative;
   z-index: 2;
   font-weight: bold;
+  
 }
 
 .bar .label.second {

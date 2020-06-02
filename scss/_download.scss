@@ -13,19 +13,21 @@ $gray: #bbbbbb;
   color:$secondary-color;
   letter-spacing:1px;
   text-shadow:0;
-  
+  font-family: lobsters;
+  font-weight: 600;
   cursor: pointer;
   transition: all 1s ease;
   &:hover {
     color:white;
     background:$secondary-color;
   }
+
   &:active {
     //letter-spacing: 2px;
     letter-spacing: 2px ;
   }
   &:after {
-    content:"Dowload My resume.";
+    content:"Download My resume.";
   }
 }
 .onclic {
