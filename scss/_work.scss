@@ -1,5 +1,108 @@
-.work
-{
-    height: 100%;
+.work {
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+  h2 {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 30px;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    font-family: lobsters;
+    text-transform: uppercase;
+    color: black;
+  }
+  h5 {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #bbbbbb;
+  }
+
+  hr {
+    margin: 30px auto;
+  }
+  &_menu {
     width: 100%;
+    &_titles {
+      display: flex;
+      flex-direction: row;
+
+      button1 {
+        flex: 1;
+        text-align: center;
+        font-size: 1rem;
+        padding: 10px 0px 5px 0px;
+        color: #000;
+        border: 1px solid $secondary-color;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        &::selection {
+          border: none;
+        }
+        &:hover {
+          background-color: $secondary-color;
+          color: #fff;
+          @include transition-ease;
+        }
+      }
+    }
+
+    &_images {
+      padding: 1vh 5vw;
+      border: 1px solid;
+      width: 100%;
+      box-sizing: border-box;
+    
+      &_image {
+        
+        width: 40%;
+        height: 40%;
+        display: inline-block;
+        min-width: 200px;
+        
+        max-width: 300px;
+        max-height: 300px;
+        position: relative;
+        
+        img {
+          border: 1px solid #000;
+          height: 20vh;
+          max-width: 100%;
+          max-height: 100%;
+        }
+        text
+        {
+          position: absolute;
+          opacity: 0;
+          font-size: 1rem;
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          @include transition-ease;
+        }
+
+        &:hover
+        {
+          
+          img 
+          {
+            
+            opacity: 0.2;
+            @include transition-ease;
+          }
+          text
+          {
+            color: black;
+            opacity: 1;
+            top: 50%;
+            @include transition-ease;
+          }
+        }
+      }
+    }
+  }
 }

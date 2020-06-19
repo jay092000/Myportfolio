@@ -931,8 +931,129 @@ button::selection {
 }
 
 .work {
-  height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+}
+
+.work h2 {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 30px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  font-family: lobsters;
+  text-transform: uppercase;
+  color: black;
+}
+
+.work h5 {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #bbbbbb;
+}
+
+.work hr {
+  margin: 30px auto;
+}
+
+.work_menu {
+  width: 100%;
+}
+
+.work_menu_titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.work_menu_titles button1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px 0px 5px 0px;
+  color: #000;
+  border: 1px solid #FF5851;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.work_menu_titles button1::-moz-selection {
+  border: none;
+}
+
+.work_menu_titles button1::selection {
+  border: none;
+}
+
+.work_menu_titles button1:hover {
+  background-color: #FF5851;
+  color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.work_menu_images {
+  padding: 1vh 5vw;
+  border: 1px solid;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.work_menu_images_image {
+  width: 40%;
+  height: 40%;
+  display: inline-block;
+  min-width: 200px;
+  max-width: 300px;
+  max-height: 300px;
+  position: relative;
+}
+
+.work_menu_images_image img {
+  border: 1px solid #000;
+  height: 20vh;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.work_menu_images_image text {
+  position: absolute;
+  opacity: 0;
+  font-size: 1rem;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.work_menu_images_image:hover img {
+  opacity: 0.2;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.work_menu_images_image:hover text {
+  color: black;
+  opacity: 1;
+  top: 50%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .testimonial {
