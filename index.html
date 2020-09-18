@@ -10,10 +10,11 @@
     />
     <link rel="stylesheet" href="./scss/main.css" />
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <title>JP</title>
   </head>
 
@@ -127,7 +128,10 @@
         <div class="services_bar">
           <div class="services_bar_data">
             <i class="fas fa-laptop-code"></i>
-            <h3>Web<br> Devlopement</h3>
+            <h3>
+              Web<br />
+              Devlopement
+            </h3>
             <h5>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit,
               dolore nisi voluptate veniam illo quam.
@@ -135,7 +139,7 @@
           </div>
           <div class="services_bar_data">
             <i class="fas fa-mobile-alt"></i>
-            <h3>Web-APP <br>Devlopement</h3>
+            <h3>Web-APP <br />Devlopement</h3>
             <h5>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit,
               dolore nisi voluptate veniam illo quam.
@@ -143,7 +147,7 @@
           </div>
           <div class="services_bar_data">
             <i class="fas fa-code"></i>
-            <h3>AI <br>Devlopment</h3>
+            <h3>AI <br />Devlopment</h3>
             <h5>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit,
               dolore nisi voluptate veniam illo quam.
@@ -153,37 +157,36 @@
       </section>
       <section class="work" id="work">
         <h2>My Works</h2>
-        <h5>WHAT I did</h5> 
+        <h5>WHAT I did</h5>
         <hr align="center" width="3%" />
         <div class="work_menu">
           <div class="work_menu_titles">
             <button1>ALL</button1>
-            <button1>Acadamic <br>Works</button1>
-            <button1>Industrial <br>Works</button1>
+            <button1>Acadamic <br />Works</button1>
+            <button1>Industrial <br />Works</button1>
+            <button1>Personal <br />Works</button1>
           </div>
           <div class="work_menu_images">
-              <div class="work_menu_images_image">
-                <img src="img/EToll_rfid.jpg" alt="E_Toll Using RFID">
-                <text>E-Toll System</text> 
-              </div>
-              <div class="work_menu_images_image">
-                <img src="img/E_Gym.jpg" alt="project_img"> 
-                <text>E-Gym</text> 
-              </div>
-              <div class="work_menu_images_image">
-                <img src="img/Gih2020.png" alt="project_img"> 
-                <text>House Price Prediction</text> 
-              </div>
-              
-              </div>
-              <div class="work_menu_images_image">
-                <img src="img/Booz.png" alt="project_img"> 
-                <text>Admin Panel</text> 
-              </div>
-              <div class="work_menu_images_image">
-                <img src="img/Booz.png" alt="project_img"> 
-                <text>Web-App</text> 
-              </div>
+            <div class="work_menu_images_image">
+              <img src="img/EToll_rfid.jpg" alt="E_Toll Using RFID" />
+              <text>E-Toll System</text>
+            </div>
+            <div class="work_menu_images_image">
+              <img src="img/E_Gym.jpg" alt="project_img" />
+              <text>E-Gym</text>
+            </div>
+            <div class="work_menu_images_image">
+              <img src="img/Gih2020.png" alt="project_img" />
+              <text>House Price Prediction</text>
+            </div>
+          </div>
+          <div class="work_menu_images_image" >
+            <img src="img/Booz.png" style="padding: 15px;" alt="project_img" />
+            <text>Admin Panel</text>
+          </div>
+          <div class="work_menu_images_image">
+            <img src="img/Booz.png" style="padding: 15px;" alt="project_img" />
+            <text>Web-App</text>
           </div>
         </div>
       </section>
@@ -282,7 +285,7 @@
       </section>
       <section id="footer" class="footer">
         <div class="footer_copyrite">
-          COPYRIGHT &#169; 2020 <span style="color: #007bff;">JP</span>.
+          COPYRIGHT &#169; 2020 <span style="color: #007bff">JP</span>.
         </div>
         <div class="footer_icons">
           <i class="fab fa-facebook"></i>
@@ -305,13 +308,14 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script src="js/skills.js"></script>
 
     <script>
-      var swiper = new Swiper(".swiper-container", {
+      var swiper = new Swiper('.swiper-container', {
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           dynamicBullets: true,
         },
       });
