@@ -213,7 +213,7 @@ img {
   position: absolute;
   top: -8px;
   width: 28px;
-  height: 3px;
+  height: 4px;
   background: #FF5851;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -321,23 +321,38 @@ img {
 }
 
 .menu-nav_item:nth-child(1) {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .menu-nav_item:nth-child(2) {
-  -webkit-transition-delay: 0.35s;
-          transition-delay: 0.35s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .menu-nav_item:nth-child(3) {
-  -webkit-transition-delay: 0.45s;
-          transition-delay: 0.45s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 .menu-nav_item:nth-child(4) {
-  -webkit-transition-delay: 0.55s;
-          transition-delay: 0.55s;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.menu-nav_item:nth-child(5) {
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+
+.menu-nav_item:nth-child(6) {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+.menu-nav_item:nth-child(7) {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
 }
 
 .about {
@@ -986,8 +1001,8 @@ button::selection {
   padding: 10px 0px 5px 0px;
   color: #000;
   border: 1px solid #FF5851;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .work_menu_titles button1::-moz-selection {
@@ -1000,6 +1015,8 @@ button::selection {
 
 .work_menu_titles button1:hover {
   background-color: #FF5851;
+  -webkit-box-shadow: 0px 0px 10px 0px #ff5851;
+          box-shadow: 0px 0px 10px 0px #ff5851;
   color: #fff;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -1224,11 +1241,23 @@ button::selection {
   margin: 1% 0;
 }
 
-.contact_box_message form button {
+.contact_box_message form input[type=submit] {
   margin: 10px 0;
-  border: 1px solid;
-  padding: 10px;
-  font-size: 14px;
+  border: 3px solid #FF5851;
+  padding: 6px;
+  font-family: lobsters;
+  font-weight: 700;
+  color: #FF5851;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.contact_box_message form input[type=submit]:hover {
+  color: #fff;
+  background-color: #FF5851;
 }
 
 .contact_box_data {

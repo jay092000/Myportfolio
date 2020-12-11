@@ -38,13 +38,14 @@
         padding: 10px 0px 5px 0px;
         color: #000;
         border: 1px solid $secondary-color;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
         &::selection {
           border: none;
         }
         &:hover {
           background-color: $secondary-color;
+          box-shadow: 0px 0px 10px 0px rgba(255,88,81,1);
           color: #fff;
           @include transition-ease;
         }

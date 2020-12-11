@@ -19,15 +19,15 @@ setTimeout(function () {
         part2.style.width = 0;
         window.setTimeout(function(){
             welcome.style.display = 'none'; 
-        },350);
+        },250);
         window.setTimeout(function(){
            part1_1.style.opacity = 1;
-        },500);
+        },400);
         window.setTimeout(function(){
             part1_2.style.opacity = 1;
             part1_3.style.opacity = 1;
-         },1000);
+         },800);
          window.setTimeout(function(){
             part1_4.style.opacity = 1;
-         },1500);
-  }, 1500);
+         },1000);
+  }, 1000);

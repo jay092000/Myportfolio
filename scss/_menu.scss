@@ -46,7 +46,7 @@
             position: absolute;
             top: -8px;
             width: 28px;
-            height: 3px;
+            height: 4px;
             background: $secondary-color;
             @include transition-ease;
         }
@@ -136,8 +136,8 @@
     }
   }
   
-  @for $i from 1 through 4 {
+  @for $i from 1 through 7 {
     .menu-nav_item:nth-child(#{$i}) {
-      transition-delay: ($i * 0.1s) + 0.15s;
+      transition-delay: ($i * 0.1s) + 0.20s;
     }
     }
