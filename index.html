@@ -117,7 +117,9 @@
         </div>
         <div class="download about_download">
           <div class="container">
-            <button class="button" id="button" onclick="myFunction()"></button>
+            <a href="/img/resume_jp.pdf" download>
+              <button class="button" id="button" onclick="myFunction()"></button
+            ></a>
           </div>
         </div>
       </section>
@@ -180,13 +182,42 @@
               <text>House Price Prediction</text>
             </div>
           </div>
-          <div class="work_menu_images_image" >
-            <img src="img/Booz.png" style="padding: 15px;" alt="project_img" />
-            <text>Admin Panel</text>
+          <div class="work_menu_images">
+            <div class="work_menu_images_image">
+              <img src="img/Booz.png" style="padding: 15px" alt="project_img" />
+              <text>Admin Panel</text>
+            </div>
+            <div class="work_menu_images_image">
+              <img src="img/booz_app.png" alt="project_img" />
+              <text
+                >Hybrid<br />
+                Web-App</text
+              >
+            </div>
+            <div class="work_menu_images_image">
+              <img src="img/web_bot.png" alt="project_img" />
+              <text>Whatsapp Bot</text>
+            </div>
           </div>
-          <div class="work_menu_images_image">
-            <img src="img/Booz.png" style="padding: 15px;" alt="project_img" />
-            <text>Web-App</text>
+          <div class="work_menu_images">
+            <a href="https://www.kaggle.com/jp0909/facial-expression-detection">
+              <div class="work_menu_images_image" href="www.google.com">
+                <img src="img/facial_expression.png" alt="project_img" />
+                <text
+                  >Facial Expression <br />
+                  classifier
+                </text>
+              </div></a
+            >
+            <a href="https://www.kaggle.com/jp0909/car-logo-classification">
+              <div class="work_menu_images_image" href="www.google.com">
+                <img src="img/car_logo_classifier.jpg" alt="project_img" />
+                <text
+                  >Car Logo <br />
+                  classifier
+                </text>
+              </div></a
+            >
           </div>
         </div>
       </section>
@@ -252,13 +283,19 @@
         <hr />
         <div class="contact_box">
           <div class="contact_box_message">
-            <form method="POST" action="#">
-              <input type="text" placeholder="Name"/ required> <input
-              type="email" placeholder="Email"/ required> <input type="number"
-              maxlength="10" placeholder="Number"/ required>
-              <textarea placeholder="Message.." cols="40" rows=""></textarea
+            <form id="javascript_form" onsubmit="return false">
+              <input type="text" name="name" placeholder="Name" required>
+              <input name="email" type="email" placeholder="Email" required>
+              <input type="text" name="number" maxlength="10"
+              placeholder="Number" required>
+              <textarea
+                name="text"
+                placeholder="Message.."
+                cols="40"
+                rows=""
+              ></textarea
               ><br />
-              <button><i class="fas fa-paper-plane"></i> Send Message</button>
+              <input type="submit" id="js_send" value="Send Message" />
             </form>
           </div>
           <div class="contact_box_data">
@@ -301,6 +338,7 @@
     <script type="module" src="js/main.js"></script>
     <script src="js/typewriter.js"></script>
     <script src="js/img.sliding.js"></script>
+    <script src="js/mail.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
