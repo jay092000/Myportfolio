@@ -8,8 +8,8 @@ function js_onSuccess() {
   // remove this to avoid redirect
   Swal.fire({
     icon: 'success',
-    title: 'Yo..!,Got your message',
-    text: 'I will get back to you soon asap.',
+    title: 'Got your message',
+    text: 'I will revert back to you soon.',
   });
   sendButton.value = 'Send Message';
 }
@@ -35,8 +35,8 @@ function js_send() {
   if (number === '' || email === '' || number === '') {
     Swal.fire({
       icon: 'error',
-      title: 'Oops...',
-      text: 'You miss out required fields.',
+      title: 'Got that your are in hurry to do message.',
+      text: 'But,for that need to provide all details.',
     });
     return;
   }
