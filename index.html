@@ -92,16 +92,19 @@
         <hr align="center" width="3%" />
         <div class="about_text">
           <div class="about_text_p1">
-            I am a budding Full Stack Developer and a future AI Engineer. 
-            I have been actively learning the field of Information Technology since three and half years as an undergrad student, reaching my final year.
-            Talking about my professional life, I have an experience of working in the industry as an intern in two local IT firms for a year. 
-            I consider that my values of being perseverant and pragmatic are the reasons that made me a better learner. 
-            I am fueled by my passions for learning the aspects of various technologies. I consider myself a 'forever student' as technology is reinvented everyday. 
-            I am persistent to become a better developer tomorrow than I am today. 
+            I am a budding Full Stack Developer and a future AI Engineer. I have
+            been actively learning the field of Information Technology since
+            three and half years as an undergrad student, reaching my final
+            year. Talking about my professional life, I have an experience of
+            working in the industry for nearly 2 years. Started as an intern and
+            now as full-stack devloper. I consider that my values of being
+            perseverant and pragmatic are the reasons that made me a better
+            learner. I am fueled by my passions for learning the aspects of
+            various technologies. I consider myself a 'forever student' as
+            technology is reinvented everyday. I am persistent to become a
+            better developer tomorrow than I am today.
           </div>
-          <div class="about_text_p2">
-         My skills  
-          </div>
+          <div class="about_text_p2">My skills</div>
         </div>
         <div class="about_wrap">
           <div class="holder">
@@ -130,7 +133,7 @@
         </div>
         <div class="download about_download">
           <div class="container">
-            <a href="/img/resume_jp.pdf" download>
+            <a href="/docs/resume_jp.pdf" download>
               <button class="button" id="button" onclick="myFunction()"></button
             ></a>
           </div>
@@ -147,11 +150,10 @@
               Web<br />
               Devlopement
             </h3>
-         
           </div>
           <div class="services_bar_data">
             <i class="fas fa-mobile-alt"></i>
-            <h3>Web-APP <br />Devlopement</h3>
+            <h3>Hybrid-App <br />Devlopement</h3>
           </div>
           <div class="services_bar_data">
             <i class="fas fa-code"></i>
@@ -165,61 +167,64 @@
         <hr align="center" width="3%" />
         <div class="work_menu">
           <div class="work_menu_titles">
-            <button1 >ALL</button1>
-            <button1>Acadamic <br />Works</button1>
-            <button1>Industrial <br />Works</button1>
-            <button1>Personal <br />Works</button1>
+            <button1 class="activeted_project" onclick="projects(1)">ALL</button1>
+            <button1 onclick="projects(2)">Acadamic <br />Works</button1>
+            <button1 onclick="projects(3)">Industrial <br />Works</button1>
+            <button1 onclick="projects(4)">Personal <br />Works</button1>
           </div>
           <div class="work_menu_images">
-            <div class="work_menu_images_image">
-              <img src="img/EToll_rfid.jpg" alt="E_Toll Using RFID" />
-              <text>E-Toll System</text>
-            </div>
-            <div class="work_menu_images_image">
-              <img src="img/E_Gym.jpg" alt="project_img" />
-              <text>E-Gym</text>
-            </div>
-            <div class="work_menu_images_image">
-              <img src="img/Gih2020.png" alt="project_img" />
-              <text>House Price Prediction</text>
-            </div>
-          </div>
-          <div class="work_menu_images">
-            <div class="work_menu_images_image">
-              <img src="img/Booz.png" style="padding: 15px" alt="project_img" />
-              <text>Admin Panel</text>
-            </div>
-            <div class="work_menu_images_image">
-              <img src="img/booz_app.png" alt="project_img" />
+            <div class="work_menu_images_image" id="image_1">
+              <div class="img"></div>
               <text
-                >Hybrid<br />
-                Web-App</text
+                >E-Toll System
+                <div>Adv. Java - MySQL</div>
+              </text>
+            </div>
+            <div class="work_menu_images_image" id="image_2">
+              <div class="img"></div>
+              <text
+                >E-Gym
+                <div>Adv. Java - MySQL</div></text
               >
             </div>
-            <div class="work_menu_images_image">
-              <img src="img/web_bot.png" alt="project_img" />
-              <text>Whatsapp Bot</text>
+            <div class="work_menu_images_image" id="image_3">
+              <div class="img"></div>
+              <text
+                >House Price Prediction
+                <div>Angular JS - Python</div>
+              </text>
             </div>
-          </div>
-          <div class="work_menu_images">
-            <a href="https://www.kaggle.com/jp0909/facial-expression-detection">
-              <div class="work_menu_images_image" href="www.google.com">
-                <img src="img/facial_expression.png" alt="project_img" />
-                <text
-                  >Facial Expression <br />
-                  classifier
-                </text>
-              </div></a
-            >
-            <a href="https://www.kaggle.com/jp0909/car-logo-classification">
-              <div class="work_menu_images_image" href="www.google.com">
-                <img src="img/car_logo_classifier.jpg" alt="project_img" />
-                <text
-                  >Car Logo <br />
-                  classifier
-                </text>
-              </div></a
-            >
+            <div class="work_menu_images_image" id="image_4">
+              <div class="img"></div>
+              <text
+                >Admin Panel
+                <div>Spring(4.X) - Firebase</div>
+              </text>
+            </div>
+            <div class="work_menu_images_image" id="image_5">
+              <div class="img"></div>
+              <text>Hybrid Web-App
+                <div>Angular - Ionic</div>
+              </text>
+            </div>
+            <div class="work_menu_images_image" id="image_6">
+              <div class="img"></div>
+              <text>Whatsapp Bot
+                <div>Angular- Electron Js</div>  
+              </text>
+            </div>
+            <div class="work_menu_images_image" id="image_7">
+              <div class="img"></div>
+              <text>Facial Expression Classifier 
+                <div>Python(Tenserflow)</div>
+              </text>
+            </div>
+            <div class="work_menu_images_image" id="image_8">
+              <div class="img"></div>
+              <text>Car Logo Classifier 
+                <div>Python(Tenserflow)</div>
+              </text>
+            </div>
           </div>
         </div>
       </section>
@@ -279,17 +284,20 @@
       </section>
       <section id="contact" class="contact">
         <h2>Get In Touch</h2>
-        <h5>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, illum!s
-        </h5>
+        <h5>Have a question or want to work together?</h5>
         <hr />
         <div class="contact_box">
           <div class="contact_box_message">
             <form id="javascript_form" onsubmit="return false">
-              <input type="text" name="name" placeholder="Name" required>
-              <input name="email" type="email" placeholder="Email" required>
-              <input type="text" name="number" maxlength="10"
-              placeholder="Number" required>
+              <input type="text" name="name" placeholder="Name" required />
+              <input name="email" type="email" placeholder="Email" required />
+              <input
+                type="text"
+                name="number"
+                maxlength="10"
+                placeholder="Number"
+                required
+              />
               <textarea
                 name="text"
                 placeholder="Message.."
@@ -324,7 +332,7 @@
       </section>
       <section id="footer" class="footer">
         <div class="footer_copyrite">
-          COPYRIGHT &#169; 2020 <span style="color: #007bff">JP</span>.
+          COPYRIGHT &#169; 2019 <span style="color: #007bff">JP</span>.
         </div>
         <div class="footer_icons">
           <a href="https://www.instagram.com/_jp_092000/">
@@ -357,7 +365,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="js/skills.js"></script>
-    <script src="js/main_1.js"> </script>
+    <script src="js/main_1.js"></script>
+    <script src="js/work.js"></script>
     <script>
       var swiper = new Swiper('.swiper-container', {
         pagination: {
