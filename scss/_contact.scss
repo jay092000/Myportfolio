@@ -1,6 +1,6 @@
 .contact {
-    text-align: center;
-    display: block;
+  text-align: center;
+  display: block;
   h2 {
     color: #000000;
     position: relative;
@@ -11,15 +11,13 @@
     letter-spacing: 1px;
     text-transform: uppercase;
   }
-  h5
-  {
-      color: #666;
-    font-size: 12px;
+  h5 {
+    color: #bbbbbb;
+    font-size: 0.7rem;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
-  hr 
-  {
+  hr {
     width: 30px;
     margin: 30px auto;
     height: 1px !important;
@@ -34,72 +32,60 @@
     padding: 0 0 10vh 0;
     &_message {
       flex: 1;
-    
-        form 
-        {
-          margin: 0 10%;
-          input 
-          {
-            border: 1px solid;
-            border-radius: 0px;
-            padding: 10px;
-            padding-left: 15px;
-            font-size: 12px;
-            width: 100%;
-            margin: 1% 0;
 
-           
-          }
-          input:focus
-          {
-            
-          } 
+      form {
+        margin: 0 10%;
+        input {
+          border: 1px solid;
+          border-radius: 0px;
+          padding: 10px;
+          padding-left: 15px;
+          font-size: 12px;
+          width: 100%;
+          margin: 1% 0;
+        }
+        input:focus {
+        }
 
-          textarea
-          {
-            width: 100%;
-            max-height: 150px;
-            min-height: 50px;
-            resize: vertical;
-            border: 1px solid;
-            border-radius: 0px;
-            padding: 10px;
-            padding-left: 15px;
-            font-size: 12px;
-            margin: 1% 0;
-          }
+        textarea {
+          width: 100%;
+          max-height: 150px;
+          min-height: 50px;
+          resize: vertical;
+          border: 1px solid;
+          border-radius: 0px;
+          padding: 10px;
+          padding-left: 15px;
+          font-size: 12px;
+          margin: 1% 0;
+        }
 
-          input[type=submit]
-          {
-            margin: 10px 0;
-            border: 3px solid #FF5851;
-            padding: 6px;
-            font-family: lobsters;
-            font-weight: 700;
-            color: #FF5851;
-            background-color: #fff;
-            border-radius: 5px;
-            font-size: 18px;
-            transition: all 1s ease;
-           &:hover 
-           {
+        input[type='submit'] {
+          margin: 10px 0;
+          border: 3px solid #ff5851;
+          padding: 6px;
+          font-family: lobsters;
+          font-weight: 700;
+          color: #ff5851;
+          background-color: #fff;
+          border-radius: 5px;
+          font-size: 18px;
+          transition: all 1s ease;
+          &:hover {
             color: #fff;
-            background-color: #FF5851;
-           }
+            background-color: #ff5851;
           }
         }
+      }
     }
     &_data {
       color: #777;
       flex: 1;
-      
-      &_card
-      {
-        margin: 5% 10%;
-        
 
-        span
-        {
+      &_card {
+        margin: 5% 10%;
+
+        span {
           font-size: 14px;
           margin-left: 10px;
           font-weight: 700;
@@ -108,8 +94,7 @@
           text-transform: uppercase;
         }
 
-        p 
-        {
+        p {
           font-size: 12px;
         }
       }
@@ -117,12 +102,9 @@
   }
 }
 
-
 @media (max-width: 700px) {
-  .contact
-  {
-    &_box
-    {
+  .contact {
+    &_box {
       flex-direction: column;
     }
   }

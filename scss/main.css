@@ -178,7 +178,7 @@ img {
 .name b {
   float: left;
   display: block;
-  font-size: 3vh;
+  font-size: 2.6vh;
   color: #ff5851;
   text-align: center;
   padding: 10px 8px;
@@ -372,7 +372,7 @@ img {
 
 .about h2 {
   position: relative;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 30px;
   padding-bottom: 15px;
@@ -404,7 +404,7 @@ img {
 
 .about_text_p2 {
   margin-top: 5%;
-  font-size: 18px;
+  font-size: 1.5rem;
   font-family: lobsters;
   font-weight: 600;
 }
@@ -420,6 +420,10 @@ img {
 .about_wrap h1 {
   text-align: center;
   margin: 20px auto;
+}
+
+.about_wrap .holder {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .bar {
@@ -957,7 +961,7 @@ button::selection {
 
 .work h2 {
   position: relative;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 30px;
   padding-bottom: 15px;
@@ -1195,7 +1199,7 @@ button::selection {
 
 .testimonials h2 {
   position: relative;
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 30px;
   padding-bottom: 15px;
@@ -1206,10 +1210,10 @@ button::selection {
 }
 
 .testimonials h5 {
-  font-size: 12px;
+  font-size: 0.7rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #666;
+  color: #bbbbbb;
 }
 
 .testimonials hr {
@@ -1282,8 +1286,8 @@ button::selection {
 }
 
 .contact h5 {
-  color: #666;
-  font-size: 12px;
+  color: #bbbbbb;
+  font-size: 0.7rem;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -1344,13 +1348,13 @@ button::selection {
   margin: 1% 0;
 }
 
-.contact_box_message form input[type=submit] {
+.contact_box_message form input[type='submit'] {
   margin: 10px 0;
-  border: 3px solid #FF5851;
+  border: 3px solid #ff5851;
   padding: 6px;
   font-family: lobsters;
   font-weight: 700;
-  color: #FF5851;
+  color: #ff5851;
   background-color: #fff;
   border-radius: 5px;
   font-size: 18px;
@@ -1358,9 +1362,9 @@ button::selection {
   transition: all 1s ease;
 }
 
-.contact_box_message form input[type=submit]:hover {
+.contact_box_message form input[type='submit']:hover {
   color: #fff;
-  background-color: #FF5851;
+  background-color: #ff5851;
 }
 
 .contact_box_data {
@@ -1429,7 +1433,7 @@ button::selection {
 
 .services h2 {
   position: relative;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 30px;
   padding-bottom: 15px;
