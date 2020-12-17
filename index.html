@@ -167,10 +167,12 @@
         <hr align="center" width="3%" />
         <div class="work_menu">
           <div class="work_menu_titles">
-            <button1 class="activeted_project" onclick="projects(1)">ALL</button1>
-            <button1 onclick="projects(2)">Acadamic <br />Works</button1>
-            <button1 onclick="projects(3)">Industrial <br />Works</button1>
-            <button1 onclick="projects(4)">Personal <br />Works</button1>
+            <button1 id="projectSelection_1" class="activeted_project" onclick="projects(1)"
+              >ALL</button1
+            >
+            <button1 id="projectSelection_2" onclick="projects(2)">Acadamic Works</button1>
+            <button1 id="projectSelection_3" onclick="projects(3)">Industrial Works</button1>
+            <button1 id="projectSelection_4" onclick="projects(4)">Personal Works</button1>
           </div>
           <div class="work_menu_images">
             <div class="work_menu_images_image" id="image_1">
@@ -202,28 +204,44 @@
               </text>
             </div>
             <div class="work_menu_images_image" id="image_5">
-              <div class="img"></div>
-              <text>Hybrid Web-App
-                <div>Angular - Ionic</div>
-              </text>
+              <a
+                href="https://play.google.com/store/apps/details?id=net.boozup"
+              >
+                <div class="img"></div>
+                <text
+                  >Hybrid Web-App
+                  <div>Angular - Ionic</div>
+                </text>
+              </a>
             </div>
             <div class="work_menu_images_image" id="image_6">
-              <div class="img"></div>
-              <text>Whatsapp Bot
-                <div>Angular- Electron Js</div>  
-              </text>
+              <a href="https://www.rpsoftech.net/whatsapp">
+                <div class="img"></div>
+                <text
+                  >Whatsapp Bot
+                  <div>Angular- Electron Js</div>
+                </text>
+              </a>
             </div>
             <div class="work_menu_images_image" id="image_7">
-              <div class="img"></div>
-              <text>Facial Expression Classifier 
-                <div>Python(Tenserflow)</div>
-              </text>
+              <a
+                href="https://www.kaggle.com/jp0909/facial-expression-detection"
+              >
+                <div class="img"></div>
+                <text
+                  >Facial Expression Classifier
+                  <div>Python(Tenserflow)</div>
+                </text>
+              </a>
             </div>
             <div class="work_menu_images_image" id="image_8">
-              <div class="img"></div>
-              <text>Car Logo Classifier 
-                <div>Python(Tenserflow)</div>
-              </text>
+              <a href="https://www.kaggle.com/jp0909/car-logo-classification">
+                <div class="img"></div>
+                <text
+                  >Car Logo Classifier
+                  <div>Python(Tenserflow)</div>
+                </text>
+              </a>
             </div>
           </div>
         </div>
@@ -295,7 +313,7 @@
                 type="number"
                 name="number"
                 maxlength="10"
-                placeholder="Number"  
+                placeholder="Number"
               />
               <textarea
                 name="text"

@@ -991,6 +991,9 @@ button::selection {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 2%;
 }
 
 .work_menu_titles button1 {
@@ -999,11 +1002,9 @@ button::selection {
           flex: 1;
   text-align: center;
   font-size: 1rem;
-  padding: 10px 0px 5px 0px;
+  padding: 10px 5px;
   color: #000;
   border: 1px solid #FF5851;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 .work_menu_titles button1::-moz-selection {
@@ -1015,12 +1016,30 @@ button::selection {
 }
 
 .work_menu_titles button1:hover {
-  background-color: #FF5851;
-  -webkit-box-shadow: 0px 0px 10px 0px #ff5851;
-          box-shadow: 0px 0px 10px 0px #ff5851;
-  color: #fff;
+  color: #FF5851;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .work_menu_titles {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .work_menu_titles {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .work_menu_titles {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .work_menu_images {
@@ -1148,6 +1167,15 @@ button::selection {
   .work_menu_images_image {
     width: 100%;
   }
+}
+
+.activeted_project {
+  background-color: #FF5851;
+  -webkit-box-shadow: 0px 0px 10px 0px #ff5851;
+          box-shadow: 0px 0px 10px 0px #ff5851;
+  color: #fff !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .testimonial {
