@@ -52,13 +52,15 @@
     }
 
     text {
+      font-family: "Raleway", sans-serif;
+      line-height: 1.75;
       h3 {
         font-size: 12px;
         text-transform: uppercase;
         color: #000;
         letter-spacing: 2px;
         font-weight: 600;
-        margin: 15px 0;
+        margin: 15px 0 0 0;
       }
 
       h6 {
