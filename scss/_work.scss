@@ -81,7 +81,7 @@
         @for $i from 1 through 12 {
           &:nth-child(#{$i}) {
             .img {
-              background: url('https://jay092000.github.io/Myportfolio/img/#{$i}.png')
+              background: url('../img/#{$i}.png')
                 center
                 center/cover;
             }
