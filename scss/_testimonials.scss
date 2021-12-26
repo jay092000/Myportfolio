@@ -42,7 +42,10 @@
   }
 
   &_slide {
-    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     img {
       margin-top: 10px;
       background-color: #ffffff;
@@ -51,9 +54,10 @@
       border-radius: 50%;
     }
 
-    text {
+    .text {
       font-family: "Raleway", sans-serif;
       line-height: 1.75;
+      max-width: 700px;
       h3 {
         font-size: 12px;
         text-transform: uppercase;

@@ -16,7 +16,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JP</title>
-    <link rel="icon" type="image/png" href="./img/favi-icon.svg"/>
+    <link rel="icon" type="image/png" href="./img/favi-icon.svg" />
   </head>
 
   <body>
@@ -256,16 +256,16 @@
           </div>
         </div>
       </section>
-      <!-- <section class="testimonial" id="testimonial">
+      <section class="testimonial" id="testimonial">
         <div class="testimonials">
           <h2>Testimonials</h2>
           <h5>What my supervisors say about me</h5>
           <hr />
-          <div class="swiper-container testimonials_container">
+          <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide testimonials_slide">
                 <img src="./img/rutvij.png" />
-                <text>
+                <div class="text">
                   <h3>Rutvij Dasadiya</h3>
                   <h6>CEO at Hello Skate Mobility LLP.</h6>
                   <p>
@@ -273,11 +273,11 @@
                     and depended on him. He is goal-oriented as well as a team
                     player, Jay was always easy-going.
                   </p>
-                </text>
+                </div>
               </div>
               <div class="swiper-slide testimonials_slide">
                 <img src="./img/Jaymin-Dave.png" />
-                <text>
+                <div class="text">
                   <h3>Jaymin Dave</h3>
                   <h6>Head of Department</h6>
                   <p>
@@ -289,24 +289,24 @@
                     player and also possess leadership skill from very young
                     age.
                   </p>
-                </text>
+                </div>
               </div>
               <div class="swiper-slide testimonials_slide">
                 <img src="./img/keyurbhai.png" />
-                <text>
+                <div class="text">
                   <h3>Keyur Shah</h3>
                   <h6>Founder at R P Softech</h6>
                   <p>
-                    Jay is smart, very hard-working, energetic, a joy to
-                    have in the office, very devoted, and committed a good team player.
+                    Jay is smart, very hard-working, energetic, a joy to have in
+                    the office, very devoted, and committed a good team player.
                   </p>
-                </text>
+                </div>
               </div>
             </div>
             <div class="swiper-pagination testimonials_dots"></div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section id="contact" class="contact">
         <h2>Get In Touch</h2>
         <h5>Have a question or want to work together?</h5>
@@ -392,10 +392,9 @@
     <script src="js/main_1.js"></script>
     <script src="js/work.js"></script>
     <script>
-      var swiper = new Swiper('.swiper-container', {
+      var swiper = new Swiper(".mySwiper", {
         pagination: {
-          el: '.swiper-pagination',
-          dynamicBullets: true,
+          el: ".swiper-pagination",
         },
       });
     </script>

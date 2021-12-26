@@ -1229,7 +1229,19 @@ button::selection {
 }
 
 .testimonials_slide {
-  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .testimonials_slide img {
@@ -1240,12 +1252,13 @@ button::selection {
   border-radius: 50%;
 }
 
-.testimonials_slide text {
+.testimonials_slide .text {
   font-family: "Raleway", sans-serif;
   line-height: 1.75;
+  max-width: 700px;
 }
 
-.testimonials_slide text h3 {
+.testimonials_slide .text h3 {
   font-size: 12px;
   text-transform: uppercase;
   color: #000;
@@ -1254,14 +1267,14 @@ button::selection {
   margin: 15px 0 0 0;
 }
 
-.testimonials_slide text h6 {
+.testimonials_slide .text h6 {
   font-size: 12px;
   margin-bottom: 15px;
   font-weight: 300;
   color: #666;
 }
 
-.testimonials_slide text p {
+.testimonials_slide .text p {
   color: #444444;
   padding: 0 10vw;
   line-height: 20px;
